@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
 //        multiDexEnabled true
-        applicationId "com.newolf.pickerview"
+        applicationId "com.newolf.pickerviewdemo"
         minSdkVersion configs.minSdkVersion
         targetSdkVersion configs.targetSdkVersion
         versionCode configs.versionCode
@@ -30,4 +30,7 @@ dependencies {
     compile deps.appcompatV7
     compile deps.constraintLayout
     testCompile 'junit:junit:4.12'
+    compile project(path: ':Libs:PickerView')
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.tencent.bugly:crashreport:latest.release'
 }
