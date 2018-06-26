@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
-apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.NeWolf'
+//apply plugin: 'com.github.dcendents.android-maven'
+//
+//group='com.github.NeWolf'
 android {
     compileSdkVersion configs.compileSdkVersion
     buildToolsVersion configs.buildToolsVersion
@@ -36,5 +36,5 @@ dependencies {
     compile project(path: ':Libs:PickerView')
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.tencent.bugly:crashreport:latest.release'
-//    compile 'com.github.newsolf:PickerView-master:2.0.0'
+//    compile 'com.github.newsolf:PickerView-master:3.0.0'
 }
