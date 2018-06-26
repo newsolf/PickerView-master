@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.NeWolf'
 
 android {
     compileSdkVersion configs.compileSdkVersion
@@ -29,3 +31,4 @@ dependencies {
 //    compile deps.appcompatV7
 //    testCompile 'junit:junit:4.12'
 }
+apply from: "../../wheel_bintrayUpload.gradle"
