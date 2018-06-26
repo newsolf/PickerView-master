@@ -73,6 +73,7 @@ task sourcesJar(type: Jar) {
 }
 
 task javadoc(type: Javadoc) {
+
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
@@ -93,6 +94,7 @@ javadoc {
     options{
         encoding "UTF-8"
         charSet 'UTF-8'
+        Xdoclnt:none "-quiet"
         author true
         version projectVersionName
         links "http://docs.oracle.com/javase/8/docs/api"
